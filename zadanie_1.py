@@ -8,6 +8,7 @@ def czy_dwucykliczny(napis):
         return True
     return False
 
+
 with open("binarne.txt", "r", encoding="UTF-8") as file:
     napisy_binarne = []
 
@@ -22,6 +23,7 @@ for napis in napisy_binarne:
     if czy_dwucykliczny(napis):
         ile_dwucykliczne += 1
 
-print(ile_dwucykliczne)
+print(f"a) Napisów dwucyklicznych jest: {ile_dwucykliczne}")
 
-
+with open("zadanie4.txt", "w", encoding="UTF-8") as file:
+    file.write(f"a) Napisów dwucyklicznych jest: {ile_dwucykliczne}\n")
